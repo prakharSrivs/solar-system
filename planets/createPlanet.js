@@ -3,7 +3,7 @@ import * as THREE from 'three'
 const createPlanet = ( children = [], radius=5, imgSrc, distanceFromSun, orbitColor  )=>{
     const planetGeometry = new THREE.IcosahedronGeometry(radius, 10);
     const textureLoader = new THREE.TextureLoader();
-    const map = textureLoader.load(`./textures/${imgSrc}`);
+    const map = textureLoader.load(`/textures/${imgSrc}`);
     const planetMaterial = new THREE.MeshBasicMaterial({ map });
     const planet = new THREE.Mesh(planetGeometry, planetMaterial);
 
